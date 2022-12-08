@@ -183,7 +183,7 @@ def draw_grid(surface, grid):
 
     for i in range(len(grid)):
         for j in range(len(grid[i])):
-            pygame.draw.rect(surface, grid[i][j], (top_left_x + j*30, top_left_y + i*30)
+            pygame.draw.rect(surface, grid[i][j], (top_left_x + j*block_size, top_left_y + i*block_size, block_size, block_size, 0)
 
 
 def clear_rows(grid, locked):
